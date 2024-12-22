@@ -25,18 +25,18 @@ foreach (string item in groceryList)
 
 Console.WriteLine("------------------");
 Console.WriteLine("enter fruit name :");
-string term = Console.ReadLine();
-if(groceryList.Contains(term) == true)
+string exist = Console.ReadLine();
+if(groceryList.Contains(exist) == true)
 {
-    Console.WriteLine($"Yes Contain: {term}");
+    Console.WriteLine($"Yes Contain: {exist}");
 }
 else
 {
     Console.WriteLine("doesnt contain");
 
 }
-string term2 = Console.ReadLine();
-int indexOf = groceryList.IndexOf(term2);
+string place = Console.ReadLine();
+int indexOf = groceryList.IndexOf(place);
 Console.WriteLine($"index : {indexOf}");
 
 Console.WriteLine("------------------");
